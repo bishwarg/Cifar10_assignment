@@ -14,9 +14,9 @@ parameters:
   learning_rate:
     value: 0.001
   batch_size:
-    values: [64, 128]
+    values: 128
   epochs:
-    value: 30
+    value: 20
 
 command:
   - ${env}
