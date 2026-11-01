@@ -1,0 +1,27 @@
+
+program: main.py
+method: grid
+
+metric:
+  name: val_accuracy
+  goal: maximize
+
+parameters:
+  activation:
+    value: "ReLU"
+  optimizer:
+    value: "Adam"
+  learning_rate:
+    value: 0.001
+  batch_size:
+    values: [64, 128]
+  epochs:
+    value: 30
+
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - --mode
+  - hyperparameter
+  - ${args}

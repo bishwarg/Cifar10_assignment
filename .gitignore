@@ -1,0 +1,8 @@
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+wandb/
+data/
+checkpoints/*.pth
+!checkpoints/best_model_epwq34m8.pth
